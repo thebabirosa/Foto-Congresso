@@ -21,10 +21,10 @@ export default function Differentials() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-6">
               Por que escolher a Foto Congresso
             </h2>
-            <p className="text-lg text-brand-grey mb-8">
+            <p className="text-lg text-[#4A4A4A] mb-8">
               Nossa experiência e dedicação garantem que você tenha a melhor cobertura para o seu evento, sem preocupações.
             </p>
             
@@ -38,10 +38,10 @@ export default function Differentials() {
                   transition={{ delay: index * 0.1 }}
                   className="flex items-center gap-4"
                 >
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-brand-purple shrink-0">
+                  <div className="w-6 h-6 rounded-full bg-yellow-50 flex items-center justify-center text-[#D4AF37] shrink-0">
                     <Check size={14} strokeWidth={3} />
                   </div>
-                  <span className="text-brand-grey font-medium">{item}</span>
+                  <span className="text-[#4A4A4A] font-medium">{item}</span>
                 </motion.div>
               ))}
             </div>
@@ -59,7 +59,7 @@ export default function Differentials() {
               alt="Conference audience"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/60 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/60 to-transparent"></div>
             <div className="absolute bottom-8 left-8 text-white max-w-xs">
               <p className="font-serif text-2xl italic">"Capturando a essência do seu evento com precisão."</p>
             </div>

@@ -11,8 +11,8 @@ export default function Hero() {
           alt="Conference Hall"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-brand-dark/70 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-[#1a1a1a]/70 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent opacity-80" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -26,8 +26,8 @@ export default function Hero() {
             Desde 2008
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 tracking-tight">
-            Fotografia Profissional para <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">
+            <span className="text-[#D4AF37]">Fotografia Profissional para</span> <br className="hidden md:block" />
+            <span className="text-white">
               Congressos e Eventos
             </span>
           </h1>
@@ -39,7 +39,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#contato"
-              className="group relative px-8 py-4 bg-brand-purple text-white rounded-full font-semibold text-lg overflow-hidden transition-all hover:bg-brand-purple/90 hover:shadow-[0_0_40px_-10px_rgba(93,46,142,0.5)]"
+              className="group relative px-8 py-4 bg-gradient-to-r from-[#D4AF37] to-[#B8860B] text-white rounded-full font-semibold text-lg overflow-hidden transition-all hover:shadow-[0_0_40px_-10px_rgba(212,175,55,0.5)]"
             >
               <span className="relative z-10 flex items-center gap-2">
                 Solicitar Orçamento

@@ -32,10 +32,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#" className="flex items-center gap-2 group">
-            <div className={`p-2 rounded-lg transition-colors ${isScrolled ? 'bg-brand-purple text-white' : 'bg-white text-brand-purple'}`}>
+            <div className={`p-2 rounded-lg transition-colors ${isScrolled ? 'bg-[#D4AF37] text-white' : 'bg-white text-[#D4AF37]'}`}>
               <Camera size={24} />
             </div>
-            <span className={`font-serif text-xl font-bold tracking-tight transition-colors ${isScrolled ? 'text-brand-dark' : 'text-white'}`}>
+            <span className={`font-serif text-xl font-bold tracking-tight transition-colors ${isScrolled ? 'text-[#1a1a1a]' : 'text-white'}`}>
               Foto Congresso
             </span>
           </a>
@@ -46,8 +46,8 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-brand-purple ${
-                  isScrolled ? 'text-brand-grey' : 'text-white/90'
+                className={`text-sm font-medium transition-colors hover:text-[#D4AF37] ${
+                  isScrolled ? 'text-[#4A4A4A]' : 'text-white/90'
                 }`}
               >
                 {link.name}
@@ -58,7 +58,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className={`p-2 rounded-full transition-all hover:scale-110 ${
-                isScrolled ? 'text-brand-dark hover:bg-brand-silver' : 'text-white hover:bg-white/10'
+                isScrolled ? 'text-[#1a1a1a] hover:bg-[#f3f4f6]' : 'text-white hover:bg-white/10'
               }`}
             >
               <Instagram size={20} />
@@ -71,9 +71,9 @@ export default function Navbar() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={isScrolled ? 'text-brand-dark' : 'text-white'} />
+              <X className={isScrolled ? 'text-[#1a1a1a]' : 'text-white'} />
             ) : (
-              <Menu className={isScrolled ? 'text-brand-dark' : 'text-white'} />
+              <Menu className={isScrolled ? 'text-[#1a1a1a]' : 'text-white'} />
             )}
           </button>
         </div>
@@ -94,7 +94,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-lg font-medium text-brand-dark hover:text-brand-purple"
+                  className="block text-lg font-medium text-[#1a1a1a] hover:text-[#D4AF37]"
                 >
                   {link.name}
                 </a>

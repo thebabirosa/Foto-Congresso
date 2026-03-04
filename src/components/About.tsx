@@ -12,10 +12,10 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-brand-dark">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#1a1a1a]">
               Especialistas em Fotografia de Eventos desde 2008
             </h2>
-            <div className="space-y-6 text-lg text-brand-grey leading-relaxed">
+            <div className="space-y-6 text-lg text-[#4A4A4A] leading-relaxed">
               <p>
                 A <strong>Foto Congresso</strong> foi criada em 2008 e é coordenada por dois fotógrafos profissionais com ampla experiência em eventos técnicos, científicos e corporativos.
               </p>
@@ -29,17 +29,17 @@ export default function About() {
 
             <div className="grid grid-cols-2 gap-6 mt-12">
               <div className="flex flex-col gap-2">
-                <div className="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center text-brand-purple mb-2">
+                <div className="w-12 h-12 rounded-xl bg-yellow-50 flex items-center justify-center text-[#D4AF37] mb-2">
                   <Award size={24} />
                 </div>
-                <h3 className="font-bold text-brand-dark">15+ Anos</h3>
+                <h3 className="font-bold text-[#1a1a1a]">15+ Anos</h3>
                 <p className="text-sm text-gray-500">De experiência no mercado</p>
               </div>
               <div className="flex flex-col gap-2">
-                <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center text-brand-dark mb-2">
+                <div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center text-[#1a1a1a] mb-2">
                   <Users size={24} />
                 </div>
-                <h3 className="font-bold text-brand-dark">Equipe Expert</h3>
+                <h3 className="font-bold text-[#1a1a1a]">Equipe Expert</h3>
                 <p className="text-sm text-gray-500">Fotógrafos profissionais</p>
               </div>
             </div>
@@ -62,11 +62,11 @@ export default function About() {
             {/* Floating Card */}
             <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-xl max-w-xs hidden md:block border border-gray-100">
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-brand-dark rounded-full text-white">
+                <div className="p-3 bg-[#1a1a1a] rounded-full text-white">
                   <Camera size={20} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-brand-dark mb-1">Qualidade Premium</h4>
+                  <h4 className="font-bold text-[#1a1a1a] mb-1">Qualidade Premium</h4>
                   <p className="text-sm text-gray-500">Equipamentos de última geração para resultados impecáveis.</p>
                 </div>
               </div>

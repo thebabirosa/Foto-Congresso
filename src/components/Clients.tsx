@@ -20,13 +20,13 @@ const cities = [
 
 export default function Clients() {
   return (
-    <section id="clientes" className="py-24 bg-brand-silver/30 overflow-hidden">
+    <section id="clientes" className="py-24 bg-[#f3f4f6]/30 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#1a1a1a]">
             Eventos e Instituições Atendidas
           </h2>
-          <p className="text-lg text-brand-grey max-w-3xl mx-auto">
+          <p className="text-lg text-[#4A4A4A] max-w-3xl mx-auto">
             Temos orgulho de ter registrado momentos importantes para grandes instituições e organizadoras de eventos em todo o país.
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function Clients() {
             >
               {/* Placeholder for Logos - In production, replace with <img> tags */}
               <div className="h-16 w-full flex items-center justify-center bg-gray-50 border border-gray-100 rounded-lg p-4">
-                <span className="font-bold text-xl text-brand-grey">{client.logo}</span>
+                <span className="font-bold text-xl text-[#4A4A4A]">{client.logo}</span>
               </div>
             </div>
           ))}
@@ -55,8 +55,8 @@ export default function Clients() {
 
       {/* Coverage Map/List */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
-        <div className="bg-brand-dark rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-purple/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div className="bg-[#1a1a1a] rounded-3xl p-8 md:p-12 text-white relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4AF37]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
           
           <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -69,7 +69,7 @@ export default function Clients() {
               <div className="flex flex-wrap gap-3">
                 {cities.map((city, i) => (
                   <span key={i} className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 text-sm text-gray-200 border border-white/10">
-                    <MapPin size={12} className="text-brand-purple" />
+                    <MapPin size={12} className="text-[#D4AF37]" />
                     {city}
                   </span>
                 ))}
@@ -81,7 +81,7 @@ export default function Clients() {
                  alt="City skyline" 
                  className="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-80 transition-opacity duration-700"
                />
-               <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent"></div>
             </div>
           </div>
         </div>

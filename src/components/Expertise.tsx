@@ -14,13 +14,13 @@ const expertiseItems = [
 
 export default function Expertise() {
   return (
-    <section className="py-20 bg-brand-silver">
+    <section className="py-20 bg-[#f3f4f6]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">
             Fotografia especializada em eventos técnicos e científicos
           </h2>
-          <p className="text-lg text-brand-grey">
+          <p className="text-lg text-[#4A4A4A]">
             Eventos técnicos exigem sensibilidade, discrição e agilidade para registrar momentos importantes sem interferir na dinâmica do evento.
           </p>
         </div>
@@ -35,8 +35,8 @@ export default function Expertise() {
               transition={{ delay: index * 0.1 }}
               className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow flex items-center gap-3"
             >
-              <CheckCircle2 className="text-brand-purple shrink-0" size={20} />
-              <span className="font-medium text-brand-dark">{item}</span>
+              <CheckCircle2 className="text-[#D4AF37] shrink-0" size={20} />
+              <span className="font-medium text-[#1a1a1a]">{item}</span>
             </motion.div>
           ))}
         </div>

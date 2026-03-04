@@ -46,17 +46,26 @@ const portfolioItems = [
   }
 ];
 
+const carouselImages = [
+  "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=1973&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1561489401-fc2876ced162?q=80&w=2070&auto=format&fit=crop"
+];
+
 export default function Gallery() {
   return (
     <section id="portfolio" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-brand-purple font-medium tracking-wider text-sm">Nosso Trabalho</span>
+          <span className="text-[#D4AF37] font-medium tracking-wider text-sm">Nosso Trabalho</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">Portfólio em Destaque</h2>
-          <div className="w-20 h-1 bg-brand-purple mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-[#D4AF37] mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px] mb-16">
           {portfolioItems.map((item, index) => (
             <motion.div
               key={item.id}
@@ -76,8 +85,8 @@ export default function Gallery() {
               />
               
               {/* Overlay */}
-              <div className="absolute inset-0 bg-brand-dark/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <span className="text-brand-purple text-sm font-medium tracking-wider mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+              <div className="absolute inset-0 bg-[#1a1a1a]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                <span className="text-[#D4AF37] text-sm font-medium tracking-wider mb-1 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                   {item.category}
                 </span>
                 <h3 className="text-white text-xl font-bold translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
@@ -91,18 +100,39 @@ export default function Gallery() {
           ))}
         </div>
 
+        {/* Image Carousel */}
+        <div className="mb-12 overflow-hidden py-4">
+          <div className="flex gap-4 animate-marquee whitespace-nowrap">
+            {[...carouselImages, ...carouselImages].map((src, index) => (
+              <div key={index} className="w-64 h-40 shrink-0 rounded-lg overflow-hidden shadow-md">
+                <img src={src} alt="Portfolio Carousel" className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-12 text-center">
           <a 
             href="https://www.instagram.com/fotocongresso/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3 bg-white border border-brand-grey/20 rounded-full text-brand-dark font-medium hover:bg-brand-purple hover:text-white hover:border-brand-purple transition-all"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-white border border-[#4A4A4A]/20 rounded-full text-[#1a1a1a] font-medium hover:bg-[#D4AF37] hover:text-white hover:border-[#D4AF37] transition-all"
           >
             <Camera size={18} />
             Ver mais no Instagram
           </a>
         </div>
       </div>
+      
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+          animation: marquee 30s linear infinite;
+        }
+      `}</style>
     </section>
   );
 }

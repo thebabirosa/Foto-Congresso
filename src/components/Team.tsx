@@ -27,11 +27,11 @@ export default function Team() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-brand-dark tracking-tight"
+            className="text-4xl md:text-5xl font-bold text-[#1a1a1a] tracking-tight"
           >
             Quem Somos
           </motion.h2>
-          <div className="w-24 h-1 bg-brand-purple mx-auto mt-6 rounded-full"></div>
+          <div className="w-24 h-1 bg-[#D4AF37] mx-auto mt-6 rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
@@ -51,10 +51,10 @@ export default function Team() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <h3 className="text-xl md:text-2xl font-bold text-brand-dark mb-3 tracking-wide">
+              <h3 className="text-xl md:text-2xl font-bold text-[#1a1a1a] mb-3 tracking-wide">
                 {member.name}
               </h3>
-              <p className="text-brand-grey font-light text-lg max-w-xs mx-auto leading-relaxed">
+              <p className="text-[#4A4A4A] font-light text-lg max-w-xs mx-auto leading-relaxed">
                 {member.role}
               </p>
             </motion.div>
