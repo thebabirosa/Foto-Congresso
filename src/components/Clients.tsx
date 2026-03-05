@@ -2,14 +2,21 @@ import { motion } from 'motion/react';
 import { MapPin } from 'lucide-react';
 
 const clients = [
-  { name: "Sociedade Brasileira de Farmacêuticos em Oncologia", logo: "SBFO" },
-  { name: "ABES – Associação Brasileira de Engenharia Sanitária", logo: "ABES" },
-  { name: "MCI Brasil", logo: "MCI" },
-  { name: "CCM Eventos", logo: "CCM" },
-  { name: "FACISC", logo: "FACISC" },
-  { name: "ABP – Congresso Brasileiro de Psiquiatria", logo: "ABP" },
-  { name: "Unimed", logo: "Unimed" },
-  { name: "Sebrae", logo: "Sebrae" },
+  { name: "Client 1", logo: "https://github.com/thebabirosa/images/blob/main/1.jpg?raw=true" },
+  { name: "Client 2", logo: "https://github.com/thebabirosa/images/blob/main/2.jpg?raw=true" },
+  { name: "Client 3", logo: "https://github.com/thebabirosa/images/blob/main/3.jpg?raw=true" },
+  { name: "Client 4", logo: "https://github.com/thebabirosa/images/blob/main/4.jpg?raw=true" },
+  { name: "Client 5", logo: "https://github.com/thebabirosa/images/blob/main/5.jpg?raw=true" },
+  { name: "Client 6", logo: "https://github.com/thebabirosa/images/blob/main/6.jpg?raw=true" },
+  { name: "Client 7", logo: "https://github.com/thebabirosa/images/blob/main/7.jpg?raw=true" },
+  { name: "Client 8", logo: "https://github.com/thebabirosa/images/blob/main/8.jpg?raw=true" },
+  { name: "Client 9", logo: "https://github.com/thebabirosa/images/blob/main/9.jpg?raw=true" },
+  { name: "Client 10", logo: "https://github.com/thebabirosa/images/blob/main/10.jpg?raw=true" },
+  { name: "Client 11", logo: "https://github.com/thebabirosa/images/blob/main/11.jpg?raw=true" },
+  { name: "Client 12", logo: "https://github.com/thebabirosa/images/blob/main/12.jpg?raw=true" },
+  { name: "Client 13", logo: "https://github.com/thebabirosa/images/blob/main/13.jpg?raw=true" },
+  { name: "Client 14", logo: "https://github.com/thebabirosa/images/blob/main/14.jpg?raw=true" },
+  { name: "Client 15", logo: "https://github.com/thebabirosa/images/blob/main/15.jpg?raw=true" },
 ];
 
 const cities = [
@@ -38,11 +45,15 @@ export default function Clients() {
           {[...clients, ...clients, ...clients].map((client, index) => (
             <div 
               key={index} 
-              className="flex items-center justify-center min-w-[200px] md:min-w-[250px] px-8 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className="flex items-center justify-center min-w-[150px] md:min-w-[200px] px-8 opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
             >
-              {/* Placeholder for Logos - In production, replace with <img> tags */}
-              <div className="h-16 w-full flex items-center justify-center bg-gray-50 border border-gray-100 rounded-lg p-4">
-                <span className="font-bold text-xl text-[#4A4A4A]">{client.logo}</span>
+              <div className="h-20 w-full flex items-center justify-center p-2">
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="max-h-full max-w-full object-contain"
+                  referrerPolicy="no-referrer"
+                />
               </div>
             </div>
           ))}

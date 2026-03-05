@@ -6,53 +6,45 @@ const portfolioItems = [
     id: 1,
     title: "Congresso Brasileiro de Medicina",
     category: "Congresso",
-    image: "https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=2070&auto=format&fit=crop",
+    image: "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(12).jpg?raw=true",
     size: "large"
   },
   {
     id: 2,
     title: "Feira de Tecnologia",
     category: "Feira",
-    image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069&auto=format&fit=crop",
+    image: "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(5).jpg?raw=true",
     size: "small"
   },
   {
     id: 3,
     title: "Workshop Corporativo",
     category: "Corporativo",
-    image: "https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=1973&auto=format&fit=crop",
+    image: "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(8).jpg?raw=true",
     size: "small"
   },
   {
     id: 4,
     title: "Premiação Anual",
     category: "Social",
-    image: "https://images.unsplash.com/photo-1519671482538-518b5c2fda68?q=80&w=2070&auto=format&fit=crop",
+    image: "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(14).jpg?raw=true",
     size: "wide"
   },
   {
     id: 5,
     title: "Simpósio Internacional",
     category: "Científico",
-    image: "https://images.unsplash.com/photo-1475721027767-p428ed254067?q=80&w=2074&auto=format&fit=crop",
-    size: "small"
-  },
-  {
-    id: 6,
-    title: "Networking Empresarial",
-    category: "Corporativo",
-    image: "https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=2070&auto=format&fit=crop",
+    image: "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(3).jpg?raw=true",
     size: "small"
   }
 ];
 
 const carouselImages = [
-  "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2012&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=1973&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1561489401-fc2876ced162?q=80&w=2070&auto=format&fit=crop"
+  "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(12).jpg?raw=true",
+  "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(5).jpg?raw=true",
+  "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(8).jpg?raw=true",
+  "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(14).jpg?raw=true",
+  "https://github.com/thebabirosa/images/blob/main/fotocongresso%20(3).jpg?raw=true"
 ];
 
 export default function Gallery() {

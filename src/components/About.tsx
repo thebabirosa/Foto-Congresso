@@ -54,9 +54,10 @@ export default function About() {
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?q=80&w=1973&auto=format&fit=crop"
+                src="https://github.com/thebabirosa/images/blob/main/fotocongresso%20(17).jpg?raw=true"
                 alt="Photographer at event"
                 className="w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
             {/* Floating Card */}

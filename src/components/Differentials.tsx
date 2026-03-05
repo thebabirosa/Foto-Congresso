@@ -55,9 +55,10 @@ export default function Differentials() {
             className="relative h-full min-h-[400px] rounded-2xl overflow-hidden shadow-xl"
           >
             <img
-              src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069&auto=format&fit=crop"
+              src="https://github.com/thebabirosa/images/blob/main/fotocongresso%20(7).jpg?raw=true"
               alt="Conference audience"
               className="absolute inset-0 w-full h-full object-cover"
+              referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a]/60 to-transparent"></div>
             <div className="absolute bottom-8 left-8 text-white max-w-xs">

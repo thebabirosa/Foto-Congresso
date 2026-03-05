@@ -31,8 +31,19 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicos" className="py-24 bg-[#1a1a1a] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="servicos" className="relative py-24 text-white overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://github.com/thebabirosa/images/blob/main/fotocongresso%20(9).jpg?raw=true"
+          alt="Background"
+          className="w-full h-full object-cover"
+          referrerPolicy="no-referrer"
+        />
+        <div className="absolute inset-0 bg-black/85 backdrop-blur-[2px]"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-[#D4AF37] font-medium tracking-wider text-sm">O que oferecemos</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6">Serviços de Fotografia para Eventos</h2>
